@@ -14,14 +14,22 @@ enum HabitGoal: String, CaseIterable, Codable, Identifiable {
 
     var icon: String {
         switch self {
-        case .sports: "figure.strengthtraining.traditional"
-        case .study: "graduationcap.fill"
-        case .supplements: "pills.fill"
-        case .protein: "takeoutbag.and.cup.and.straw.fill"
-        case .friends: "person.2.fill"
-        case .x: "xmark"
-        case .read: "book.fill"
-        case .bedtime: "moon.zzz.fill"
+        case .sports:
+            return "figure.strengthtraining.traditional"
+        case .study:
+            return "graduationcap.fill"
+        case .supplements:
+            return "pills.fill"
+        case .protein:
+            return "takeoutbag.and.cup.and.straw.fill"
+        case .friends:
+            return "person.2.fill"
+        case .x:
+            return "xmark"
+        case .read:
+            return "book.fill"
+        case .bedtime:
+            return "moon.zzz.fill"
         }
     }
 }
